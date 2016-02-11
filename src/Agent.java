@@ -8,7 +8,7 @@ public class Agent {
     Sreda sreda;
     Random random = new Random();
     int shtraf = 0; //task3
-    public void startAgent(Sreda s){
+    public Sreda startAgent(Sreda s){
         sreda=s;
 
         for(int i=0;i<1000;i++){
@@ -17,6 +17,7 @@ public class Agent {
             }
             step();
         }
+        return s;
     }
     public boolean proverka(){
         return sreda.getRazmesheniyeMusora().isClean();
