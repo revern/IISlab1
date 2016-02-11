@@ -6,8 +6,8 @@ import java.util.Random;
 //  Task 2
 public class Agent {
     Sreda sreda;
-    Random random = new Random();
     int shtraf = 0; //task3
+    Random random = new Random(); //task4
     public Sreda startAgent(Sreda s){
         sreda=s;
 
@@ -30,7 +30,7 @@ public class Agent {
     }
 
     public void step(){
-
+        //task4
         int vector = random.nextInt(4);
         switch (vector) {
             case 1:
