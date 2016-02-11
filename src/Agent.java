@@ -7,6 +7,7 @@ import java.util.Random;
 public class Agent {
     Sreda sreda;
     Random random = new Random();
+    int shtraf = 0; //task3
     public void startAgent(Sreda s){
         sreda=s;
 
@@ -53,6 +54,7 @@ public class Agent {
             stepDown();
         }else{
             //step right
+            shtraf++; //task3
         }
     }
     public void stepLeft(){
